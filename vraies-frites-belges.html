@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Vraies Frites Belges Authentiques - Recette - Plats - Saveurs d'Ailleurs - Spice & Spoon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lasagnes.css">
+    <meta name="keywords" content="frites belges, pommes de terre, friteuse, double cuisson, recette authentique, tradition belge">
+    <meta name="description" content="La véritable recette des frites belges par une authentique Belge ! Double cuisson traditionnelle pour des frites parfaitement croustillantes à l'extérieur et fondantes à l'intérieur.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="__67c4b3e483369.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="__67c4b3e483369.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar1">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+    </nav>
+    
+    <nav id="navbar">
+        <div class="text">
+            <a href="index.html" class="hbfwdhjn"><h1 class="title">Spice & Spoon</h1></a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apéritifs.html">Apéritifs</a></li>
+            <li><a href="entrées.html">Entrées</a></li>
+            <li><a href="plats.html">Plats</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="saveursdailleurs.html">Saveurs d'Ailleurs</a></li>
+            <li><a href="articlesspéciaux.html">Articles Spéciaux</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <a href="#"><i class="bi bi-moon" id="bi-moon"></i></a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="recipe-header">
+            <div class="recipe-intro">
+                <h2>Vraies Frites Belges</h2>
+                <div class="recipe-tags">
+                    <a href="plats.html" class="recipe-tag">Plats</a>
+                    <a href="saveursdailleurs.html" class="recipe-tag">Saveurs d'Ailleurs</a>
+                </div>
+                <p class="recipe-description">
+                    L'authentique recette des frites belges transmise par une vraie Belge ! Le secret : la double cuisson traditionnelle qui garantit des frites parfaitement croustillantes à l'extérieur et moelleuses à l'intérieur. Un délice incontournable !
+                </p>
+                
+                <div class="recipe-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Préparation : 20 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-fire"></i>
+                        <span>Cuisson : 15 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-star"></i>
+                        <span>Difficulté : Moyenne</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-image">
+                    <img src="frites belges.webp" alt="Vraies Frites Belges" class="main-image">
+                </div>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h3>Ingrédients</h3>
+                <div class="portion-control">
+                    <h4>Recette pour <span id="personnes">4</span> personnes</h4>
+                    <button class="personne-btn" onclick="changerPortions()">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+                
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Ingrédients principaux :</h4>
+                <ul class="ingredients-list">
+                    <li id="pommes-terre">Pommes de terre : <span class="quantity">1</span> kg</li>
+                    <li id="bain-friture">Bain de friture : <span class="quantity">1</span> complet</li>
+                    <li id="sel">Sel fin : au goût</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Matériel nécessaire :</h4>
+                <ul class="ingredients-list">
+                    <li id="friteuse">Friteuse ou grande casserole</li>
+                    <li id="panier">Panier de friteuse</li>
+                    <li id="papier-absorbant">Papier essuie-tout</li>
+                    <li id="thermometre">Thermomètre de cuisson (optionnel)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recette">
+        <div class="recipe-content">
+            <h3>Instructions</h3>
+            
+            <div class="etapes">
+                <div class="etape">
+                    <div class="etape-numero">1</div>
+                    <div class="etape-description">
+                        <p>Éplucher soigneusement les pommes de terre, puis les laver à l'eau froide. Les couper en frites d'environ 1 cm d'épaisseur, au couteau à la traditionnelle ou à la machine à frites.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">2</div>
+                    <div class="etape-description">
+                        <p>Laver abondamment les frites coupées à l'eau froide pour enlever l'excès d'amidon. Les sécher minutieusement avec du papier essuie-tout - c'est essentiel pour éviter les projections d'huile.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">3</div>
+                    <div class="etape-description">
+                        <p>Chauffer le bain de friture à 160°C. Vérifier la température avec un thermomètre de cuisson ou tester avec une frite : elle doit grésiller doucement sans colorer rapidement.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">4</div>
+                    <div class="etape-description">
+                        <p><strong>Première cuisson :</strong> Mettre la moitié des frites dans le panier et cuire 6-7 minutes en secouant régulièrement pour éviter qu'elles collent. Cette étape cuit l'intérieur sans colorer.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">5</div>
+                    <div class="etape-description">
+                        <p>Égoutter les frites en secouant le panier au-dessus de la friteuse, puis les déposer sur du papier essuie-tout. Répéter l'opération avec l'autre moitié des frites.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">6</div>
+                    <div class="etape-description">
+                        <p>Remonter la température de la friteuse à 180°C et attendre quelques minutes. <strong>Deuxième cuisson :</strong> Plonger les frites pré-cuites pendant 4 minutes dans l'huile brûlante pour les dorer parfaitement. Secouer régulièrement.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">7</div>
+                    <div class="etape-description">
+                        <p>Égoutter à nouveau en secouant au-dessus de la friteuse. Mettre les frites dans un saladier tapissé de papier essuie-tout, saler généreusement et secouer une dernière fois. Servir immédiatement bien chaud !</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conseils">
+                <h4>Conseils de la vraie Belge</h4>
+                <ul>
+                    <li>Utilisez des pommes de terre à chair ferme comme la Bintje, Charlotte ou Agria - c'est le secret des Belges !</li>
+                    <li>Ne surchargez jamais le panier : mieux vaut faire plusieurs petites fournées</li>
+                    <li>La double cuisson est OBLIGATOIRE : 160°C pour cuire, 180°C pour dorer - ne négligez pas cette étape !</li>
+                    <li>Séchez parfaitement les frites après lavage, sinon l'huile va projeter dangereusement</li>
+                    <li>Utilisez de l'huile de qualité (tournesol, arachide) et changez-la régulièrement</li>
+                    <li>Servez avec de la mayonnaise belge traditionnelle, pas du ketchup !</li>
+                    <li>En Belgique, on mange les frites dans un cornet en papier avec une petite fourchette en bois</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h3>Vous aimerez aussi</h3>
+        <div class="suggestions-container">
+            <div class="suggestion-card">
+                <img src="lasagnes.jpg" alt="Lasagnes à la béchamel">
+                <h4>Lasagnes à la béchamel</h4>
+                <a href="lasagnes-et-sauce-béchamel.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="tacos.png" alt="Tacos au Bœuf">
+                <h4>Tacos au Bœuf Épicé</h4>
+                <a href="tacos-au-boeuf-épicé.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="kimchi jigae.jpg" alt="Kimchi Jigae">
+                <h4>Kimchi Jigae</h4>
+                <a href="kimchi-jigae.html" class="view-recipe">Voir la recette</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Abonnez-vous</h1>
+        <p>Pour ne pas manquer de nouvelles recettes fantastiques !</p>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre adresse mail ici">
+        </div>
+
+        <button class="send" type="submit">S'inscrire à la newsletter</button>
+    </section>
+
+    <footer>&copy; 2024 Spice & Spoon. Tous droits réservés.</footer>
+
+    <script>
+        // Script pour le menu responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+            
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('show');
+                });
+            }
+            
+            // Persistance du thème
+            const moonIcon = document.getElementById('bi-moon');
+            const body = document.body;
+            
+            // Vérifier si un thème est déjà enregistré
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Appliquer le thème sauvegardé s'il existe
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                if (moonIcon) {
+                    moonIcon.classList.remove('bi-moon');
+                    moonIcon.classList.add('bi-sun');
+                }
+            }
+            
+            // Gestion du clic sur l'icône de thème
+            if (moonIcon) {
+                moonIcon.addEventListener('click', function() {
+                    // Basculer entre les modes
+                    body.classList.toggle('dark-mode');
+                    
+                    // Mettre à jour l'icône
+                    if (body.classList.contains('dark-mode')) {
+                        moonIcon.classList.remove('bi-moon');
+                        moonIcon.classList.add('bi-sun');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        moonIcon.classList.remove('bi-sun');
+                        moonIcon.classList.add('bi-moon');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+
+        // Modifier les quantités d'ingrédients - FRITES BELGES
+        const portionsPossibles = [4, 8, 12, 16];
+        let index = 0; // Commence à 4 personnes
+
+        // Quantités de BASE (pour 4 personnes)
+        const quantitesBase = {
+            'pommes-terre': 1,
+            'bain-friture': 1
+        };
+
+        function changerPortions() {
+            index = (index + 1) % portionsPossibles.length;
+            const personnes = portionsPossibles[index];
+            document.getElementById("personnes").textContent = personnes;
+            
+            // Met à jour les quantités proportionnellement
+            Object.keys(quantitesBase).forEach(ingredient => {
+                const quantiteBase = quantitesBase[ingredient];
+                const nouvelleQuantite = (quantiteBase * personnes) / 4; // Règle de 3
+                const element = document.getElementById(ingredient);
+                
+                if (element) {
+                    const quantityElement = element.querySelector('.quantity');
+                    if (quantityElement) {
+                        // Formatage selon le type d'ingrédient
+                        if (ingredient === 'pommes-terre') {
+                            // Pommes de terre en kg avec décimales si nécessaire
+                            if (nouvelleQuantite >= 1) {
+                                quantityElement.textContent = nouvelleQuantite.toFixed(1);
+                            } else {
+                                quantityElement.textContent = (nouvelleQuantite * 1000).toFixed(0) + 'g';
+                            }
+                        } else {
+                            // Bain de friture reste à 1 (on adapte pas vraiment)
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

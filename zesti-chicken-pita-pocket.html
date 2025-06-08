@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Zesty Chicken Pita Pocket - Recette - Plats - Saveurs d'Ailleurs - Spice & Spoon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="zesty.css">
+    <meta name="keywords" content="pita, poulet, recette méditerranéenne, houmous, légumes, plat santé, grill">
+    <meta name="description" content="Découvrez notre délicieuse recette de Zesty Chicken Pita Pocket. Du poulet grillé aux épices, des légumes frais et du houmous dans un pain pita moelleux !">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="__67c4b3e483369.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="__67c4b3e483369.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar1">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+    </nav>
+    
+    <nav id="navbar">
+        <div class="text">
+            <a href="index.html" class="hbfwdhjn"><h1 class="title">Spice & Spoon</h1></a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apéritifs.html">Apéritifs</a></li>
+            <li><a href="entrées.html">Entrées</a></li>
+            <li><a href="plats.html">Plats</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="saveursdailleurs.html">Saveurs d'Ailleurs</a></li>
+            <li><a href="articlesspéciaux.html">Articles Spéciaux</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <a href="#"><i class="bi bi-moon" id="bi-moon"></i></a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="recipe-header">
+            <div class="recipe-intro">
+                <h2>Zesty Chicken Pita Pocket</h2>
+                <div class="recipe-tags">
+                    <a href="plats.html" class="recipe-tag">Plats</a>
+                    <a href="saveursdailleurs.html" class="recipe-tag">Saveurs d'Ailleurs</a>
+                </div>
+                <p class="recipe-description">
+                    Une délicieuse recette méditerranéenne qui combine du poulet grillé aux épices, des légumes frais croquants et du houmous crémeux dans un pain pita moelleux. Parfait pour un repas sain et savoureux !
+                </p>
+                
+                <div class="recipe-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Préparation : 10 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-fire"></i>
+                        <span>Cuisson : 20 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-star"></i>
+                        <span>Difficulté : Facile</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-image">
+                    <img src="zestychicken.png" alt="Zesty Chicken Pita Pocket" class="main-image">
+                </div>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h3>Ingrédients</h3>
+                <div class="portion-control">
+                    <h4>Recette pour <span id="personnes">4</span> personnes</h4>
+                    <button class="personne-btn" onclick="changerPortions()">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+                
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Pour le poulet :</h4>
+                <ul class="ingredients-list">
+                    <li id="cuisses-poulet">Cuisses de poulet désossées : <span class="quantity">450</span>g</li>
+                    <li id="huile-olive">Huile d'olive : <span class="quantity">60</span>ml</li>
+                    <li id="sel-poivre">Sel et poivre : <span class="quantity">1</span> c. à café chacun</li>
+                    <li id="cumin">Cumin moulu : <span class="quantity">1</span> c. à café</li>
+                    <li id="coriandre">Coriandre moulue : <span class="quantity">1</span> c. à café</li>
+                    <li id="origan">Origan séché : <span class="quantity">0.5</span> c. à café</li>
+                    <li id="ail-poudre">Poudre d'ail : <span class="quantity">0.5</span> c. à café</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Pour la garniture :</h4>
+                <ul class="ingredients-list">
+                    <li id="tomates">Tomates en tranches : <span class="quantity">250</span>ml</li>
+                    <li id="concombres">Concombres en dés : <span class="quantity">250</span>ml</li>
+                    <li id="oignon-rouge">Oignon rouge en dés : <span class="quantity">60</span>ml</li>
+                    <li id="persil">Persil frais haché : <span class="quantity">30</span>ml</li>
+                    <li id="jus-citron">Jus de citron : <span class="quantity">30</span>ml</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Autres :</h4>
+                <ul class="ingredients-list">
+                    <li id="pains-pita">Pains pita de blé entier : <span class="quantity">4</span></li>
+                    <li id="houmous">Houmous préparé : <span class="quantity">125</span>ml</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recette">
+        <div class="recipe-content">
+            <h3>Instructions</h3>
+            
+            <div class="etapes">
+                <div class="etape">
+                    <div class="etape-numero">1</div>
+                    <div class="etape-description">
+                        <p>Mélanger le poulet avec 1 cuillère à soupe d'huile d'olive, 1/2 cuillère à café de sel et de poivre, le cumin, la coriandre, l'origan et la poudre d'ail. Bien enrober le poulet du mélange d'épices.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">2</div>
+                    <div class="etape-description">
+                        <p>Préchauffer le gril à feu moyen-vif et bien graisser la grille. Griller le poulet pendant 10 à 12 minutes de chaque côté ou jusqu'à ce qu'il soit bien marqué et cuit à cœur (température interne de 74°C).</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">3</div>
+                    <div class="etape-description">
+                        <p>Laisser reposer le poulet pendant 10 minutes, puis le trancher finement en lamelles.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">4</div>
+                    <div class="etape-description">
+                        <p>Pendant ce temps, mélanger les tomates, les concombres, l'oignon rouge, le persil, le jus de citron et le reste de l'huile d'olive, du sel et du poivre dans un bol.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">5</div>
+                    <div class="etape-description">
+                        <p>Réchauffer les pains pita selon les instructions sur l'emballage pour qu'ils soient bien souples et chauds.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">6</div>
+                    <div class="etape-description">
+                        <p>Ouvrir délicatement chaque pita en formant une poche. Étaler du houmous à l'intérieur, puis garnir avec le poulet tranché et le mélange de légumes. Servir immédiatement.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conseils">
+                <h4>Conseils</h4>
+                <ul>
+                    <li>Vous pouvez remplacer les cuisses de poulet par des blancs de poulet pour une version plus maigre</li>
+                    <li>Pour plus de saveur, marinez le poulet dans les épices pendant 30 minutes avant la cuisson</li>
+                    <li>Ajoutez des olives noires ou de la feta pour une touche méditerranéenne supplémentaire</li>
+                    <li>Si vous n'avez pas de gril, vous pouvez cuire le poulet à la poêle ou au four à 200°C pendant 25 minutes</li>
+                    <li>Les pitas peuvent être réchauffés au micro-ondes pendant 30 secondes ou au four enveloppés dans du papier d'aluminium</li>
+                    <li>Préparez le mélange de légumes à l'avance pour gagner du temps</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h3>Vous aimerez aussi</h3>
+        <div class="suggestions-container">
+            <div class="suggestion-card">
+                <img src="frites belges.webp" alt="Vraies Frites Belges Authentiques">
+                <h4>Vraies Frites Belges Authentiques</h4>
+                <a href="vraies-frites-belges.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="bowl.png" alt="Bowl Coloré aux Légumes">
+                <h4>Bowl Coloré aux Légumes</h4>
+                <a href="bowl-légumes.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="lasagnes.jpg" alt="Lasagnes et sauce béchamel">
+                <h4>Lasagnes et sauce béchamel</h4>
+                <a href="lasagnes-et-sauce-béchamel.html" class="view-recipe">Voir la recette</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Abonnez-vous</h1>
+        <p>Pour ne pas manquer de nouvelles recettes fantastiques !</p>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre adresse mail ici">
+        </div>
+
+        <button class="send" type="submit">S'inscrire à la newsletter</button>
+    </section>
+
+    <footer>&copy; 2024 Spice & Spoon. Tous droits réservés.</footer>
+
+    <script>
+        // Script pour le menu responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+            
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('show');
+                });
+            }
+            
+            // Persistance du thème
+            const moonIcon = document.getElementById('bi-moon');
+            const body = document.body;
+            
+            // Vérifier si un thème est déjà enregistré
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Appliquer le thème sauvegardé s'il existe
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                if (moonIcon) {
+                    moonIcon.classList.remove('bi-moon');
+                    moonIcon.classList.add('bi-sun');
+                }
+            }
+            
+            // Gestion du clic sur l'icône de thème
+            if (moonIcon) {
+                moonIcon.addEventListener('click', function() {
+                    // Basculer entre les modes
+                    body.classList.toggle('dark-mode');
+                    
+                    // Mettre à jour l'icône
+                    if (body.classList.contains('dark-mode')) {
+                        moonIcon.classList.remove('bi-moon');
+                        moonIcon.classList.add('bi-sun');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        moonIcon.classList.remove('bi-sun');
+                        moonIcon.classList.add('bi-moon');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+
+        // Modifier les quantités d'ingrédients - ZESTY CHICKEN PITA
+        const portionsPossibles = [4, 8, 12, 16];
+        let index = 0; // Commence à 4 personnes
+
+        // Quantités de BASE (pour 4 personnes)
+        const quantitesBase = {
+            'cuisses-poulet': 450,
+            'huile-olive': 60,
+            'sel-poivre': 1,
+            'cumin': 1,
+            'coriandre': 1,
+            'origan': 0.5,
+            'ail-poudre': 0.5,
+            'tomates': 250,
+            'concombres': 250,
+            'oignon-rouge': 60,
+            'persil': 30,
+            'jus-citron': 30,
+            'pains-pita': 4,
+            'houmous': 125
+        };
+
+        function changerPortions() {
+            index = (index + 1) % portionsPossibles.length;
+            const personnes = portionsPossibles[index];
+            document.getElementById("personnes").textContent = personnes;
+            
+            // Met à jour les quantités proportionnellement
+            Object.keys(quantitesBase).forEach(ingredient => {
+                const quantiteBase = quantitesBase[ingredient];
+                const nouvelleQuantite = (quantiteBase * personnes) / 4; // Règle de 3
+                const element = document.getElementById(ingredient);
+                
+                if (element) {
+                    const quantityElement = element.querySelector('.quantity');
+                    if (quantityElement) {
+                        // Formatage selon le type d'ingrédient
+                        if (ingredient === 'pains-pita' || ingredient === 'sel-poivre' || ingredient === 'cumin' || ingredient === 'coriandre') {
+                            // Ingrédients en unités entières
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else if (ingredient === 'origan' || ingredient === 'ail-poudre') {
+                            // Épices en demi-unités
+                            quantityElement.textContent = (nouvelleQuantite).toFixed(1);
+                        } else if (ingredient === 'cuisses-poulet') {
+                            // Viande en grammes
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else {
+                            // Autres ingrédients (liquides et légumes)
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

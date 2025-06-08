@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Pêches au thon - Recette - Apéritifs - Entrées - Spice & Spoon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pêchesthon.css">
+    <meta name="keywords" content="pêches au thon, entrée froide, recette estivale, apéritif, thon blanc, mayonnaise, persil">
+    <meta name="description" content="Découvrez la recette des pêches au thon ! Une entrée froide rafraîchissante et originale, parfaite pour les beaux jours. Simple et délicieuse !">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="__67c4b3e483369.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="__67c4b3e483369.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar1">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+    </nav>
+    
+    <nav id="navbar">
+        <div class="text">
+            <a href="index.html" class="hbfwdhjn"><h1 class="title">Spice & Spoon</h1></a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apéritifs.html">Apéritifs</a></li>
+            <li><a href="entrées.html">Entrées</a></li>
+            <li><a href="plats.html">Plats</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="saveursdailleurs.html">Saveurs d'Ailleurs</a></li>
+            <li><a href="articlesspéciaux.html">Articles Spéciaux</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <a href="#"><i class="bi bi-moon" id="bi-moon"></i></a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="recipe-header">
+            <div class="recipe-intro">
+                <h2>Pêches au thon</h2>
+                <div class="recipe-tags">
+                    <a href="entrées.html" class="recipe-tag">Entrées</a>
+                    <a href="apéritifs.html" class="recipe-tag">Apéritifs</a>
+                </div>
+                <p class="recipe-description">
+                    Une entrée froide originale et rafraîchissante ! Ces demi-pêches garnies d'une délicieuse préparation au thon et mayonnaise sont parfaites pour les beaux jours. Un mariage sucré-salé surprenant et délicieux.
+                </p>
+                
+                <div class="recipe-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Préparation : 5 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-snow2"></i>
+                        <span>15 min au frais</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-star"></i>
+                        <span>Difficulté : Très facile</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-image">
+                    <img src="pêches-aux-thon.jpg" alt="Pêches au thon" class="main-image">
+                </div>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h3>Ingrédients</h3>
+                <div class="portion-control">
+                    <h4>Recette pour <span id="personnes">4</span> personnes</h4>
+                    <button class="personne-btn" onclick="changerPortions()">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+                
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Ingrédients principaux :</h4>
+                <ul class="ingredients-list">
+                    <li id="peches">Pêches au sirop (1 grosse boîte) : <span class="quantity">800</span>g</li>
+                    <li id="thon">Thon blanc au naturel (1 grosse boîte) : <span class="quantity">400</span>g</li>
+                    <li id="mayonnaise">Mayonnaise : <span class="quantity">4</span> c. à soupe</li>
+                    <li id="persil">Persil frais : <span class="quantity">4</span> brins</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Assaisonnement (optionnel) :</h4>
+                <ul class="ingredients-list">
+                    <li id="citron">Jus de citron : <span class="quantity">1</span> c. à café</li>
+                    <li id="poivre">Poivre noir : <span class="quantity">1</span> pincée</li>
+                    <li id="paprika">Paprika doux : <span class="quantity">1</span> pincée</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Pour la présentation :</h4>
+                <ul class="ingredients-list">
+                    <li id="salade">Feuilles de salade : <span class="quantity">8</span> feuilles</li>
+                    <li id="tomates-cerises">Tomates cerises (décoration) : <span class="quantity">8</span></li>
+                    <li id="olives">Olives noires (optionnel) : <span class="quantity">12</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recette">
+        <div class="recipe-content">
+            <h3>Instructions</h3>
+            
+            <div class="etapes">
+                <div class="etape">
+                    <div class="etape-numero">1</div>
+                    <div class="etape-description">
+                        <p>Ouvrir la boîte de thon blanc au naturel et bien l'égoutter. L'émietter finement dans un saladier à l'aide d'une fourchette.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">2</div>
+                    <div class="etape-description">
+                        <p>Laver et ciseler finement le persil frais. Mélanger le thon émietté avec la mayonnaise et le persil ciselé jusqu'à obtenir une préparation homogène.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">3</div>
+                    <div class="etape-description">
+                        <p>Assaisonner la préparation avec une pincée de poivre et quelques gouttes de citron si désiré. Mélanger délicatement.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">4</div>
+                    <div class="etape-description">
+                        <p>Ouvrir la boîte de pêches et égoutter soigneusement les demi-pêches. Les disposer côté creux vers le haut sur un plat de service.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">5</div>
+                    <div class="etape-description">
+                        <p>À l'aide d'une cuillère, remplir généreusement le centre de chaque demi-pêche avec la préparation au thon.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">6</div>
+                    <div class="etape-description">
+                        <p>Laver et essorer les feuilles de salade. Les disposer en lit sur une grande assiette de service, puis placer délicatement les pêches farcies par-dessus.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">7</div>
+                    <div class="etape-description">
+                        <p>Décorer avec les tomates cerises coupées en deux et quelques olives noires. Saupoudrer légèrement de paprika pour la couleur.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">8</div>
+                    <div class="etape-description">
+                        <p>Réserver au réfrigérateur pendant 15 minutes avant de servir bien frais. Accompagner de pain grillé ou de crackers.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conseils">
+                <h4>Conseils</h4>
+                <ul>
+                    <li>Choisissez un thon blanc de qualité au naturel pour un meilleur goût</li>
+                    <li>Vous pouvez remplacer le persil par de la ciboulette ou de l'aneth</li>
+                    <li>Pour une version allégée, remplacez la mayonnaise par du fromage blanc</li>
+                    <li>Cette recette se prépare très bien à l'avance pour un apéritif</li>
+                    <li>Variez la présentation avec des demi-poires pour changer</li>
+                    <li>Accompagnez d'un vin blanc sec bien frais pour sublimer les saveurs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h3>Vous aimerez aussi</h3>
+        <div class="suggestions-container">
+            <div class="suggestion-card">
+                <img src="guacamole.png" alt="Guacamole">
+                <h4>Guacamole</h4>
+                <a href="guacamole.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="samoussas.png" alt="Samoussas">
+                <h4>Samoussas au boeuf</h4>
+                <a href="samoussas-au-boeuf.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="sttmorêt.jpg" alt="Blinis au saumon et St Moret">
+                <h4>Blinis au saumon et St Moret</h4>
+                <a href="blinis-au-saumon-et-st-morêt.html" class="view-recipe">Voir la recette</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Abonnez-vous</h1>
+        <p>Pour ne pas manquer de nouvelles recettes fantastiques !</p>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre adresse mail ici">
+        </div>
+
+        <button class="send" type="submit">S'inscrire à la newsletter</button>
+    </section>
+
+    <footer>&copy; 2024 Spice & Spoon. Tous droits réservés.</footer>
+
+    <script>
+        // Script pour le menu responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+            
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('show');
+                });
+            }
+            
+            // Persistance du thème
+            const moonIcon = document.getElementById('bi-moon');
+            const body = document.body;
+            
+            // Vérifier si un thème est déjà enregistré
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Appliquer le thème sauvegardé s'il existe
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                if (moonIcon) {
+                    moonIcon.classList.remove('bi-moon');
+                    moonIcon.classList.add('bi-sun');
+                }
+            }
+            
+            // Gestion du clic sur l'icône de thème
+            if (moonIcon) {
+                moonIcon.addEventListener('click', function() {
+                    // Basculer entre les modes
+                    body.classList.toggle('dark-mode');
+                    
+                    // Mettre à jour l'icône
+                    if (body.classList.contains('dark-mode')) {
+                        moonIcon.classList.remove('bi-moon');
+                        moonIcon.classList.add('bi-sun');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        moonIcon.classList.remove('bi-sun');
+                        moonIcon.classList.add('bi-moon');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+
+        // Modifier les quantités d'ingrédients - PÊCHES AU THON
+        const portionsPossibles = [4, 6, 8, 10, 12];
+        let index = 0; // Commence à 4 personnes
+
+        // Quantités de BASE (pour 4 personnes)
+        const quantitesBase = {
+            'peches': 800,
+            'thon': 400,
+            'mayonnaise': 4,
+            'persil': 4,
+            'citron': 1,
+            'poivre': 1,
+            'paprika': 1,
+            'salade': 8,
+            'tomates-cerises': 8,
+            'olives': 12
+        };
+
+        function changerPortions() {
+            index = (index + 1) % portionsPossibles.length;
+            const personnes = portionsPossibles[index];
+            document.getElementById("personnes").textContent = personnes;
+            
+            // Met à jour les quantités proportionnellement
+            Object.keys(quantitesBase).forEach(ingredient => {
+                const quantiteBase = quantitesBase[ingredient];
+                const nouvelleQuantite = (quantiteBase * personnes) / 4; // Règle de 3
+                const element = document.getElementById(ingredient);
+                
+                if (element) {
+                    const quantityElement = element.querySelector('.quantity');
+                    if (quantityElement) {
+                        // Formatage selon le type d'ingrédient
+                        if (ingredient === 'persil' || ingredient === 'citron' || ingredient === 'poivre' || ingredient === 'paprika') {
+                            // Unités entières pour épices et herbes
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else if (ingredient === 'mayonnaise') {
+                            // Cuillères à soupe
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else if (ingredient === 'salade' || ingredient === 'tomates-cerises' || ingredient === 'olives') {
+                            // Unités pour décoration
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else {
+                            // Ingrédients en grammes
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

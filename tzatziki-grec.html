@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Tzatziki grec - Recette - Apéritifs - Spice & Spoon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="tzatziki.css">
+    <meta name="keywords" content="tzatziki, recette grecque, yaourt grec, concombre, ail, aneth, menthe, mezze, apéritif">
+    <meta name="description" content="Découvrez la vraie recette du tzatziki grec ! Une délicieuse sauce fraîche au yaourt, concombre et herbes. Parfaite pour accompagner vos grillades et mezze !">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="__67c4b3e483369.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="__67c4b3e483369.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar1">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+    </nav>
+    
+    <nav id="navbar">
+        <div class="text">
+            <a href="index.html" class="hbfwdhjn"><h1 class="title">Spice & Spoon</h1></a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apéritifs.html">Apéritifs</a></li>
+            <li><a href="entrées.html">Entrées</a></li>
+            <li><a href="plats.html">Plats</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="saveursdailleurs.html">Saveurs d'Ailleurs</a></li>
+            <li><a href="articlesspéciaux.html">Articles Spéciaux</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <a href="#"><i class="bi bi-moon" id="bi-moon"></i></a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="recipe-header">
+            <div class="recipe-intro">
+                <h2>Tzatziki grec traditionnel</h2>
+                <div class="recipe-tags">
+                    <a href="apéritifs.html" class="recipe-tag">Apéritifs</a>
+                    <a href="saveursdailleurs.html" class="recipe-tag">Saveurs d'Ailleurs</a>
+                </div>
+                <p class="recipe-description">
+                    Le grand classique de la cuisine grecque ! Un tzatziki authentique et rafraîchissant au yaourt grec, concombre croquant et herbes fraîches. Parfait pour accompagner vos grillades, mezze ou simplement avec du pain pita grillé.
+                </p>
+                
+                <div class="recipe-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Préparation : 20 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-hourglass"></i>
+                        <span>Égouttage : 4-8h</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-star"></i>
+                        <span>Difficulté : Facile</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-image">
+                    <img src="tzatziki.jpg" alt="Tzatziki grec traditionnel" class="main-image">
+                </div>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h3>Ingrédients</h3>
+                <div class="portion-control">
+                    <h4>Recette pour <span id="personnes">4</span> personnes</h4>
+                    <button class="personne-btn" onclick="changerPortions()">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+                
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Base :</h4>
+                <ul class="ingredients-list">
+                    <li id="yaourt">Yaourt nature 11% : <span class="quantity">500</span>ml</li>
+                    <li id="concombre">Concombre anglais : <span class="quantity">1</span></li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Assaisonnement :</h4>
+                <ul class="ingredients-list">
+                    <li id="ail">Gousses d'ail : <span class="quantity">2</span></li>
+                    <li id="vinaigre">Vinaigre : <span class="quantity">15</span>ml</li>
+                    <li id="sel">Sel : <span class="quantity">2.5</span>ml</li>
+                    <li id="huile-olive">Huile d'olive : <span class="quantity">60</span>ml</li>
+                    <li id="aneth">Aneth frais ciselé : <span class="quantity">30</span>ml</li>
+                    <li id="menthe">Menthe fraîche ciselée : <span class="quantity">15</span>ml</li>
+                    <li id="origan">Origan séché : <span class="quantity">1</span> pincée</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Pour servir :</h4>
+                <ul class="ingredients-list">
+                    <li id="pain-pita">Pain pita épais : <span class="quantity">4</span> pièces</li>
+                    <li id="olives-kalamata">Olives kalamata : <span class="quantity">8</span></li>
+                    <li id="huile-service">Huile d'olive (service) : <span class="quantity">2</span> c. à soupe</li>
+                    <li id="herbes-decoration">Herbes fraîches (décoration) : <span class="quantity">1</span> c. à soupe</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Matériel :</h4>
+                <ul class="ingredients-list">
+                    <li id="tamis">Tamis fin : <span class="quantity">1</span></li>
+                    <li id="etamine">Étamine ou papier absorbant : <span class="quantity">1</span></li>
+                    <li id="rape">Râpe (gros côté) : <span class="quantity">1</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recette">
+        <div class="recipe-content">
+            <h3>Instructions</h3>
+            
+            <div class="etapes">
+                <div class="etape">
+                    <div class="etape-numero">1</div>
+                    <div class="etape-description">
+                        <p>Tapisser un grand tamis fin d'une épaisseur de papier absorbant ou de trois couches d'étamine (coton à fromage) et le placer au-dessus d'un grand bol.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">2</div>
+                    <div class="etape-description">
+                        <p>Verser le yaourt dans le tamis. Couvrir de papier absorbant ou rabattre l'étamine sur le yaourt. Laisser égoutter au réfrigérateur de 4 à 8 heures jusqu'à ce que le yaourt soit bien ferme.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">3</div>
+                    <div class="etape-description">
+                        <p>Jeter le liquide récupéré (environ 125 ml). Le yaourt égoutté doit avoir une consistance crémeuse et dense.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">4</div>
+                    <div class="etape-description">
+                        <p>Peler le concombre anglais et le couper en deux dans le sens de la longueur. Retirer les graines à l'aide d'une cuillère.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">5</div>
+                    <div class="etape-description">
+                        <p>Râper le concombre avec le côté le plus gros de la râpe. Dans un bol, mélanger le concombre râpé avec le vinaigre et le sel. Laisser reposer 10 minutes.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">6</div>
+                    <div class="etape-description">
+                        <p>Égoutter soigneusement le concombre en le pressant fermement dans un tamis ou entre les mains pour extraire le maximum d'eau.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">7</div>
+                    <div class="etape-description">
+                        <p>Râper finement les gousses d'ail. Ciseler finement l'aneth et la menthe fraîche.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">8</div>
+                    <div class="etape-description">
+                        <p>Dans un grand bol, mélanger le yaourt égoutté, le concombre pressé, l'ail râpé, l'huile d'olive, l'aneth et la menthe. Mélanger vigoureusement pendant 2 minutes pour bien émulsionner.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">9</div>
+                    <div class="etape-description">
+                        <p>Goûter et ajuster l'assaisonnement en sel et poivre selon vos goûts. Réserver au réfrigérateur au moins 1 heure avant de servir.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">10</div>
+                    <div class="etape-description">
+                        <p>Répartir le tzatziki dans une assiette creuse. Napper d'un filet d'huile d'olive, saupoudrer d'origan et garnir des olives kalamata. Parsemer d'herbes fraîches et servir avec du pain pita grillé.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conseils">
+                <h4>Conseils</h4>
+                <ul>
+                    <li>L'égouttage du yaourt est essentiel pour obtenir la bonne texture crémeuse</li>
+                    <li>Bien presser le concombre pour éviter que le tzatziki soit trop liquide</li>
+                    <li>Utilisez un yaourt grec épais (11% de matières grasses) pour plus d'onctuosité</li>
+                    <li>Le tzatziki se bonifie en reposant : préparez-le la veille si possible</li>
+                    <li>Servez bien frais et accompagnez de légumes croquants ou viandes grillées</li>
+                    <li>Se conserve 3-4 jours au réfrigérateur dans un récipient hermétique</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h3>Vous aimerez aussi</h3>
+        <div class="suggestions-container">
+            <div class="suggestion-card">
+                <img src="samoussas.png" alt="Samoussas">
+                <h4>Samoussas au boeuf</h4>
+                <a href="samoussas-au-boeuf.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="pêches-aux-thon.jpg" alt="Pêches au thon">
+                <h4>Pêches au thon</h4>
+                <a href="pêches-au-thon.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="imageapéritifs1.png" alt="Houmous traditionnel">
+                <h4>Houmous traditionnel</h4>
+                <a href="houmous-traditionnel.html" class="view-recipe">Voir la recette</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Abonnez-vous</h1>
+        <p>Pour ne pas manquer de nouvelles recettes fantastiques !</p>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre adresse mail ici">
+        </div>
+
+        <button class="send" type="submit">S'inscrire à la newsletter</button>
+    </section>
+
+    <footer>&copy; 2024 Spice & Spoon. Tous droits réservés.</footer>
+
+    <script>
+        // Script pour le menu responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+            
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('show');
+                });
+            }
+            
+            // Persistance du thème
+            const moonIcon = document.getElementById('bi-moon');
+            const body = document.body;
+            
+            // Vérifier si un thème est déjà enregistré
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Appliquer le thème sauvegardé s'il existe
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                if (moonIcon) {
+                    moonIcon.classList.remove('bi-moon');
+                    moonIcon.classList.add('bi-sun');
+                }
+            }
+            
+            // Gestion du clic sur l'icône de thème
+            if (moonIcon) {
+                moonIcon.addEventListener('click', function() {
+                    // Basculer entre les modes
+                    body.classList.toggle('dark-mode');
+                    
+                    // Mettre à jour l'icône
+                    if (body.classList.contains('dark-mode')) {
+                        moonIcon.classList.remove('bi-moon');
+                        moonIcon.classList.add('bi-sun');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        moonIcon.classList.remove('bi-sun');
+                        moonIcon.classList.add('bi-moon');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+
+        // Modifier les quantités d'ingrédients - TZATZIKI
+        const portionsPossibles = [4, 6, 8, 10, 12];
+        let index = 0; // Commence à 4 personnes
+
+        // Quantités de BASE (pour 4 personnes)
+        const quantitesBase = {
+            'yaourt': 500,
+            'concombre': 1,
+            'ail': 2,
+            'vinaigre': 15,
+            'sel': 2.5,
+            'huile-olive': 60,
+            'aneth': 30,
+            'menthe': 15,
+            'origan': 1,
+            'pain-pita': 4,
+            'olives-kalamata': 8,
+            'huile-service': 2,
+            'herbes-decoration': 1,
+            'tamis': 1,
+            'etamine': 1,
+            'rape': 1
+        };
+
+        function changerPortions() {
+            index = (index + 1) % portionsPossibles.length;
+            const personnes = portionsPossibles[index];
+            document.getElementById("personnes").textContent = personnes;
+            
+            // Met à jour les quantités proportionnellement
+            Object.keys(quantitesBase).forEach(ingredient => {
+                const quantiteBase = quantitesBase[ingredient];
+                const nouvelleQuantite = (quantiteBase * personnes) / 4; // Règle de 3
+                const element = document.getElementById(ingredient);
+                
+                if (element) {
+                    const quantityElement = element.querySelector('.quantity');
+                    if (quantityElement) {
+                        // Formatage selon le type d'ingrédient
+                        if (ingredient === 'concombre' || ingredient === 'ail' || ingredient === 'origan' || ingredient === 'pain-pita' || ingredient === 'tamis' || ingredient === 'etamine' || ingredient === 'rape') {
+                            // Unités entières
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else if (ingredient === 'sel') {
+                            // Sel avec décimales
+                            quantityElement.textContent = nouvelleQuantite.toFixed(1);
+                        } else if (ingredient === 'huile-service' || ingredient === 'herbes-decoration') {
+                            // Cuillères à soupe
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else {
+                            // Autres ingrédients en ml ou grammes
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Bowl Coloré aux Légumes - Recette - Plats - Saveurs d'Ailleurs - Spice & Spoon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lasagnes.css">
+    <meta name="keywords" content="buddha bowl, bol santé, légumes, avocat, riz basmati, végétarien, healthy, graines de sésame">
+    <meta name="description" content="Un délicieux Buddha Bowl coloré et nutritif avec riz basmati, avocat, légumes croquants et sauce soja. Parfait pour un repas sain et équilibré !">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="__67c4b3e483369.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="__67c4b3e483369.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar1">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+    </nav>
+    
+    <nav id="navbar">
+        <div class="text">
+            <a href="index.html" class="hbfwdhjn"><h1 class="title">Spice & Spoon</h1></a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apéritifs.html">Apéritifs</a></li>
+            <li><a href="entrées.html">Entrées</a></li>
+            <li><a href="plats.html">Plats</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="saveursdailleurs.html">Saveurs d'Ailleurs</a></li>
+            <li><a href="articlesspéciaux.html">Articles Spéciaux</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <a href="#"><i class="bi bi-moon" id="bi-moon"></i></a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="recipe-header">
+            <div class="recipe-intro">
+                <h2>Bowl Coloré aux Légumes</h2>
+                <div class="recipe-tags">
+                    <a href="plats.html" class="recipe-tag">Plats</a>
+                    <a href="saveursdailleurs.html" class="recipe-tag">Saveurs d'Ailleurs</a>
+                </div>
+                <p class="recipe-description">
+                    Un bol nutritif et coloré qui marie harmonieusement riz basmati parfumé, avocat crémeux, légumes croquants et graines nutritives. Une explosion de saveurs et de bienfaits dans un seul plat !
+                </p>
+                
+                <div class="recipe-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Préparation : 20 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-fire"></i>
+                        <span>Cuisson : 15 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-star"></i>
+                        <span>Difficulté : Facile</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-image">
+                    <img src="bowl.png" alt="Buddha Bowl Coloré" class="main-image">
+                </div>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h3>Ingrédients</h3>
+                <div class="portion-control">
+                    <h4>Recette pour <span id="personnes">4</span> personnes</h4>
+                    <button class="personne-btn" onclick="changerPortions()">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+                
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Base du bowl :</h4>
+                <ul class="ingredients-list">
+                    <li id="riz-basmati">Riz basmati cuit : <span class="quantity">400</span>g</li>
+                    <li id="avocat">Avocat : <span class="quantity">2</span></li>
+                    <li id="pousses-epinards">Pousses d'épinards : <span class="quantity">120</span>g</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Légumes colorés :</h4>
+                <ul class="ingredients-list">
+                    <li id="chou-rouge">Chou rouge : <span class="quantity">200</span>g</li>
+                    <li id="radis-roses">Radis roses : <span class="quantity">20</span></li>
+                    <li id="betteraves-cuites">Petites betteraves cuites : <span class="quantity">4</span></li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Garniture et assaisonnement :</h4>
+                <ul class="ingredients-list">
+                    <li id="cacahuetes">Cacahuètes grillées : <span class="quantity">4</span> c. à soupe</li>
+                    <li id="graines-sesame">Graines de sésame : <span class="quantity">4</span> c. à soupe</li>
+                    <li id="coriandre">Brins de coriandre : <span class="quantity">20</span></li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Sauce :</h4>
+                <ul class="ingredients-list">
+                    <li id="sauce-soja">Sauce soja : <span class="quantity">8</span> c. à soupe</li>
+                    <li id="jus-citron">Jus de citron : <span class="quantity">2</span> citrons</li>
+                    <li id="huile-sesame">Huile de sésame : <span class="quantity">4</span> c. à café</li>
+                    <li id="poivre">Poivre du moulin : au goût</li>
+                    <li id="piment">Pincée de piment : <span class="quantity">2</span> (optionnel)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recette">
+        <div class="recipe-content">
+            <h3>Instructions</h3>
+            
+            <div class="etapes">
+                <div class="etape">
+                    <div class="etape-numero">1</div>
+                    <div class="etape-description">
+                        <p>Cuire le riz basmati selon les instructions du paquet. Une fois cuit, le laisser refroidir complètement à température ambiante ou au réfrigérateur.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">2</div>
+                    <div class="etape-description">
+                        <p>Préparer tous les légumes : émincer finement le chou rouge, couper l'avocat en belles lamelles, trancher les radis en rondelles fines et couper les betteraves cuites en petits morceaux.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">3</div>
+                    <div class="etape-description">
+                        <p>Préparer la sauce en mélangeant dans un bol la sauce soja, le jus de citron et l'huile de sésame. Poivrer selon le goût.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">4</div>
+                    <div class="etape-description">
+                        <p>Mélanger le riz refroidi avec une partie de la sauce (environ la moitié) pour bien l'assaisonner.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">5</div>
+                    <div class="etape-description">
+                        <p>Assembler les bowls : disposer le riz assaisonné au fond de chaque bol, puis arranger harmonieusement tous les légumes par sections colorées pour créer un effet visuel attrayant.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">6</div>
+                    <div class="etape-description">
+                        <p>Parsemer généreusement de cacahuètes grillées, de graines de sésame et de coriandre fraîche ciselée. Assaisonner avec du poivre et une pincée de piment si désiré. Servir avec le reste de sauce à part.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conseils">
+                <h4>Conseils</h4>
+                <ul>
+                    <li>Vous pouvez remplacer le riz basmati par du quinoa ou du riz complet pour plus de fibres</li>
+                    <li>Ajoutez des edamames ou des pois chiches pour plus de protéines végétales</li>
+                    <li>Variez les légumes selon la saison : brocolis, carottes râpées, concombre...</li>
+                    <li>Pour une version plus riche, ajoutez du tofu grillé ou des œufs mollets</li>
+                    <li>Préparez tous les éléments à l'avance et assemblez au dernier moment</li>
+                    <li>Les graines peuvent être variées : tournesol, courge, lin pour différents apports nutritionnels</li>
+                    <li>La sauce peut être préparée en plus grande quantité et conservée 3 jours au réfrigérateur</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h3>Vous aimerez aussi</h3>
+        <div class="suggestions-container">
+            <div class="suggestion-card">
+                <img src="shwarma.jpg" alt="Shawarma Syrien au Poulet">
+                <h4>Shawarma Syrien au Poulet</h4>
+                <a href="shawarma-syrienne-poulet.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="frites belges.webp" alt="Vraies Frites Belges Authentiques">
+                <h4>Vraies Frites Belges Authentiques</h4>
+                <a href="vraies-frites-belges.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="zestychicken.png" alt="Zesty Chicken Pita Pocket">
+                <h4>Zesty Chicken Pita Pocket</h4>
+                <a href="zesti-chicken-pita-pocket.html" class="view-recipe">Voir la recette</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Abonnez-vous</h1>
+        <p>Pour ne pas manquer de nouvelles recettes fantastiques !</p>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre adresse mail ici">
+        </div>
+
+        <button class="send" type="submit">S'inscrire à la newsletter</button>
+    </section>
+
+    <footer>&copy; 2024 Spice & Spoon. Tous droits réservés.</footer>
+
+    <script>
+        // Script pour le menu responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+            
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('show');
+                });
+            }
+            
+            // Persistance du thème
+            const moonIcon = document.getElementById('bi-moon');
+            const body = document.body;
+            
+            // Vérifier si un thème est déjà enregistré
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Appliquer le thème sauvegardé s'il existe
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                if (moonIcon) {
+                    moonIcon.classList.remove('bi-moon');
+                    moonIcon.classList.add('bi-sun');
+                }
+            }
+            
+            // Gestion du clic sur l'icône de thème
+            if (moonIcon) {
+                moonIcon.addEventListener('click', function() {
+                    // Basculer entre les modes
+                    body.classList.toggle('dark-mode');
+                    
+                    // Mettre à jour l'icône
+                    if (body.classList.contains('dark-mode')) {
+                        moonIcon.classList.remove('bi-moon');
+                        moonIcon.classList.add('bi-sun');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        moonIcon.classList.remove('bi-sun');
+                        moonIcon.classList.add('bi-moon');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+
+        // Modifier les quantités d'ingrédients - BUDDHA BOWL
+        const portionsPossibles = [4, 8, 12, 16];
+        let index = 0; // Commence à 4 personnes
+
+        // Quantités de BASE (pour 4 personnes)
+        const quantitesBase = {
+            'riz-basmati': 400,
+            'avocat': 2,
+            'pousses-epinards': 120,
+            'chou-rouge': 200,
+            'radis-roses': 20,
+            'betteraves-cuites': 4,
+            'cacahuetes': 4,
+            'graines-sesame': 4,
+            'coriandre': 20,
+            'sauce-soja': 8,
+            'jus-citron': 2,
+            'huile-sesame': 4,
+            'piment': 2
+        };
+
+        function changerPortions() {
+            index = (index + 1) % portionsPossibles.length;
+            const personnes = portionsPossibles[index];
+            document.getElementById("personnes").textContent = personnes;
+            
+            // Met à jour les quantités proportionnellement
+            Object.keys(quantitesBase).forEach(ingredient => {
+                const quantiteBase = quantitesBase[ingredient];
+                const nouvelleQuantite = (quantiteBase * personnes) / 4; // Règle de 3
+                const element = document.getElementById(ingredient);
+                
+                if (element) {
+                    const quantityElement = element.querySelector('.quantity');
+                    if (quantityElement) {
+                        // Formatage selon le type d'ingrédient
+                        if (ingredient === 'riz-basmati' || ingredient === 'pousses-epinards' || ingredient === 'chou-rouge') {
+                            // Ingrédients en grammes
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else {
+                            // Autres ingrédients en unités entières
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

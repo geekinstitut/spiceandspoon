@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Tacos au Bœuf Épicé - Recette - Plats - Saveurs d'Ailleurs - Spice & Spoon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lasagnes.css">
+    <meta name="keywords" content="tacos, bœuf haché, tortillas, cuisine mexicaine, haricots rouges, épices, cumin">
+    <meta name="description" content="Délicieux tacos au bœuf épicé avec des haricots rouges et des légumes frais. Une recette mexicaine savoureuse et facile à préparer pour toute la famille !">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="__67c4b3e483369.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="__67c4b3e483369.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar1">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+    </nav>
+    
+    <nav id="navbar">
+        <div class="text">
+            <a href="index.html" class="hbfwdhjn"><h1 class="title">Spice & Spoon</h1></a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apéritifs.html">Apéritifs</a></li>
+            <li><a href="entrées.html">Entrées</a></li>
+            <li><a href="plats.html">Plats</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="saveursdailleurs.html">Saveurs d'Ailleurs</a></li>
+            <li><a href="articlesspéciaux.html">Articles Spéciaux</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <a href="#"><i class="bi bi-moon" id="bi-moon"></i></a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="recipe-header">
+            <div class="recipe-intro">
+                <h2>Tacos au Bœuf Épicé</h2>
+                <div class="recipe-tags">
+                    <a href="plats.html" class="recipe-tag">Plats</a>
+                    <a href="saveursdailleurs.html" class="recipe-tag">Saveurs d'Ailleurs</a>
+                </div>
+                <p class="recipe-description">
+                    Des tacos authentiques au bœuf haché épicé, garnis de haricots rouges, de légumes frais croquants et d'une pointe de Tabasco. Un voyage culinaire vers le Mexique dans votre assiette !
+                </p>
+                
+                <div class="recipe-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Préparation : 15 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-fire"></i>
+                        <span>Cuisson : 15 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-star"></i>
+                        <span>Difficulté : Facile</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-image">
+                    <img src="tacos.png" alt="Tacos au Bœuf Épicé" class="main-image">
+                </div>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h3>Ingrédients</h3>
+                <div class="portion-control">
+                    <h4>Recette pour <span id="personnes">4</span> personnes</h4>
+                    <button class="personne-btn" onclick="changerPortions()">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+                
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Pour la garniture :</h4>
+                <ul class="ingredients-list">
+                    <li id="tortillas">Tortillas pour tacos : <span class="quantity">8</span></li>
+                    <li id="boeuf-hache">Bœuf haché : <span class="quantity">250</span>g</li>
+                    <li id="oignon-blanc">Oignon blanc : <span class="quantity">1</span></li>
+                    <li id="poivron-vert">Poivron vert : <span class="quantity">0.5</span></li>
+                    <li id="huile-olive">Huile d'olive : <span class="quantity">2</span> c. à soupe</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Légumes et sauce :</h4>
+                <ul class="ingredients-list">
+                    <li id="tomates">Tomates : <span class="quantity">2</span></li>
+                    <li id="haricots-rouges">Boîte de haricots rouges : <span class="quantity">1</span> petite</li>
+                    <li id="coulis-tomate">Coulis de tomate : <span class="quantity">200</span>ml</li>
+                    <li id="laitue">Feuilles de laitue : <span class="quantity">8</span></li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Épices :</h4>
+                <ul class="ingredients-list">
+                    <li id="cumin">Cumin en poudre : <span class="quantity">1</span> c. à café</li>
+                    <li id="sel-poivre">Sel et poivre : au goût</li>
+                    <li id="tabasco">Tabasco : <span class="quantity">quelques</span> gouttes (optionnel)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recette">
+        <div class="recipe-content">
+            <h3>Instructions</h3>
+            
+            <div class="etapes">
+                <div class="etape">
+                    <div class="etape-numero">1</div>
+                    <div class="etape-description">
+                        <p>Émincer l'oignon blanc finement. Faire chauffer l'huile d'olive dans une grande poêle et faire revenir l'oignon jusqu'à ce qu'il soit doré (environ 3-4 minutes).</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">2</div>
+                    <div class="etape-description">
+                        <p>Ajouter la viande hachée dans la poêle. Assaisonner avec le sel, le poivre et le cumin. Laisser cuire en émiettant bien la viande pendant 5 minutes jusqu'à ce qu'elle soit bien dorée.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">3</div>
+                    <div class="etape-description">
+                        <p>Pendant ce temps, couper les tomates et le demi-poivron en petits dés. Les incorporer à la poêlée avec le coulis de tomate. Laisser mijoter 5 minutes.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">4</div>
+                    <div class="etape-description">
+                        <p>Égoutter les haricots rouges et les rincer à l'eau froide. Les ajouter à la préparation et cuire encore 2 minutes. Hors du feu, ajuster l'assaisonnement et ajouter quelques gouttes de Tabasco si désiré.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">5</div>
+                    <div class="etape-description">
+                        <p>Réchauffer légèrement les tortillas dans une poêle sèche ou au micro-ondes pour qu'elles soient souples.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">6</div>
+                    <div class="etape-description">
+                        <p>Garnir chaque tortilla avec la préparation au bœuf, ajouter une feuille de laitue fraîche, puis refermer en roulant comme des crêpes. Servir immédiatement pendant que c'est chaud !</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conseils">
+                <h4>Conseils</h4>
+                <ul>
+                    <li>Vous pouvez remplacer le bœuf par de la dinde hachée pour une version plus légère</li>
+                    <li>Ajoutez de l'avocat en tranches et de la crème fraîche pour plus de gourmandise</li>
+                    <li>Pour plus de piquant, incorporez des piments jalapeños émincés</li>
+                    <li>Les haricots noirs peuvent remplacer les haricots rouges pour varier</li>
+                    <li>Préparez la garniture à l'avance et réchauffez-la au moment de servir</li>
+                    <li>Accompagnez de guacamole et de salsa mexicaine pour un repas complet</li>
+                    <li>Les tortillas de maïs sont plus authentiques mais les tortillas de blé fonctionnent très bien aussi</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h3>Vous aimerez aussi</h3>
+        <div class="suggestions-container">
+            <div class="suggestion-card">
+                <img src="kimchi jigae.jpg" alt="Kimchi Jigae">
+                <h4>Kimchi Jigae</h4>
+                <a href="kimchi-jigae.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="zestychicken.png" alt="Zesty Chicken Pita Pocket">
+                <h4>Zesty Chicken Pita Pocket</h4>
+                <a href="zesti-chicken-pita-pocket.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="lasagnes.jpg" alt="Lasagnes et sauce béchamel">
+                <h4>Lasagnes et sauce béchamel</h4>
+                <a href="lasagnes-et-sauce-béchamel.html" class="view-recipe">Voir la recette</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Abonnez-vous</h1>
+        <p>Pour ne pas manquer de nouvelles recettes fantastiques !</p>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre adresse mail ici">
+        </div>
+
+        <button class="send" type="submit">S'inscrire à la newsletter</button>
+    </section>
+
+    <footer>&copy; 2024 Spice & Spoon. Tous droits réservés.</footer>
+
+    <script>
+        // Script pour le menu responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+            
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('show');
+                });
+            }
+            
+            // Persistance du thème
+            const moonIcon = document.getElementById('bi-moon');
+            const body = document.body;
+            
+            // Vérifier si un thème est déjà enregistré
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Appliquer le thème sauvegardé s'il existe
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                if (moonIcon) {
+                    moonIcon.classList.remove('bi-moon');
+                    moonIcon.classList.add('bi-sun');
+                }
+            }
+            
+            // Gestion du clic sur l'icône de thème
+            if (moonIcon) {
+                moonIcon.addEventListener('click', function() {
+                    // Basculer entre les modes
+                    body.classList.toggle('dark-mode');
+                    
+                    // Mettre à jour l'icône
+                    if (body.classList.contains('dark-mode')) {
+                        moonIcon.classList.remove('bi-moon');
+                        moonIcon.classList.add('bi-sun');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        moonIcon.classList.remove('bi-sun');
+                        moonIcon.classList.add('bi-moon');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+
+        // Modifier les quantités d'ingrédients - TACOS AU BŒUF
+        const portionsPossibles = [4, 8, 12, 16];
+        let index = 0; // Commence à 4 personnes
+
+        // Quantités de BASE (pour 4 personnes)
+        const quantitesBase = {
+            'tortillas': 8,
+            'boeuf-hache': 250,
+            'oignon-blanc': 1,
+            'poivron-vert': 0.5,
+            'huile-olive': 2,
+            'tomates': 2,
+            'haricots-rouges': 1,
+            'coulis-tomate': 200,
+            'laitue': 8,
+            'cumin': 1
+        };
+
+        function changerPortions() {
+            index = (index + 1) % portionsPossibles.length;
+            const personnes = portionsPossibles[index];
+            document.getElementById("personnes").textContent = personnes;
+            
+            // Met à jour les quantités proportionnellement
+            Object.keys(quantitesBase).forEach(ingredient => {
+                const quantiteBase = quantitesBase[ingredient];
+                const nouvelleQuantite = (quantiteBase * personnes) / 4; // Règle de 3
+                const element = document.getElementById(ingredient);
+                
+                if (element) {
+                    const quantityElement = element.querySelector('.quantity');
+                    if (quantityElement) {
+                        // Formatage selon le type d'ingrédient
+                        if (ingredient === 'boeuf-hache' || ingredient === 'coulis-tomate') {
+                            // Viande et liquides en grammes/ml
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else if (ingredient === 'poivron-vert') {
+                            // Demi-poivron avec décimales
+                            quantityElement.textContent = (nouvelleQuantite).toFixed(1);
+                        } else {
+                            // Autres ingrédients en unités entières
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

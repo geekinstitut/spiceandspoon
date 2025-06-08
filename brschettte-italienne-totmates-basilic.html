@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Bruschetta Tomates-Basilic Italienne - Recette - Entrées - Spice & Spoon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lasagnes.css">
+    <meta name="keywords" content="bruschetta, tomates, basilic, mozzarella, recette italienne, entrée, pain grillé, ail">
+    <meta name="description" content="Authentique bruschetta italienne aux tomates fraîches, basilic et mozzarella di bufala. L'entrée parfaite qui capture toute la saveur de l'Italie !">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="__67c4b3e483369.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="__67c4b3e483369.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar1">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+    </nav>
+    
+    <nav id="navbar">
+        <div class="text">
+            <a href="index.html" class="hbfwdhjn"><h1 class="title">Spice & Spoon</h1></a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apéritifs.html">Apéritifs</a></li>
+            <li><a href="entrées.html">Entrées</a></li>
+            <li><a href="plats.html">Plats</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="saveursdailleurs.html">Saveurs d'Ailleurs</a></li>
+            <li><a href="articlesspéciaux.html">Articles Spéciaux</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <a href="#"><i class="bi bi-moon" id="bi-moon"></i></a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="recipe-header">
+            <div class="recipe-intro">
+                <h2>Bruschetta Tomates-Basilic</h2>
+                <div class="recipe-tags">
+                    <a href="entrées.html" class="recipe-tag">Entrées</a>
+                    <a href="saveursdailleurs.html" class="recipe-tag">Saveurs d'Ailleurs</a>
+                </div>
+                <p class="recipe-description">
+                    La véritable bruschetta italienne dans toute sa simplicité ! Des tomates gorgées de soleil, du basilic parfumé, de la mozzarella di bufala crémeuse sur du pain grillé frotté à l'ail. Un voyage instantané vers l'Italie à chaque bouchée !
+                </p>
+                
+                <div class="recipe-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Préparation : 15 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-fire"></i>
+                        <span>Cuisson : 5 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-star"></i>
+                        <span>Difficulté : Facile</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-image">
+                    <img src="brsuchstteae.jpg" alt="Bruschetta Tomates-Basilic" class="main-image">
+                </div>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h3>Ingrédients</h3>
+                <div class="portion-control">
+                    <h4>Recette pour <span id="personnes">4</span> personnes</h4>
+                    <button class="personne-btn" onclick="changerPortions()">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+                
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Pain et base :</h4>
+                <ul class="ingredients-list">
+                    <li id="baguette">Baguette ou pain de campagne : <span class="quantity">8</span> tranches</li>
+                    <li id="gousses-ail">Gousses d'ail : <span class="quantity">2</span></li>
+                    <li id="huile-olive-extra">Huile d'olive extra vierge : <span class="quantity">4</span> c. à soupe</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Garniture :</h4>
+                <ul class="ingredients-list">
+                    <li id="tomates-mures">Tomates bien mûres : <span class="quantity">4</span></li>
+                    <li id="mozzarella-bufala">Mozzarella di bufala : <span class="quantity">150</span>g</li>
+                    <li id="basilic-frais">Basilic frais : <span class="quantity">1</span> bouquet</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Assaisonnement :</h4>
+                <ul class="ingredients-list">
+                    <li id="vinaigre-balsamique">Vinaigre balsamique : <span class="quantity">2</span> c. à soupe</li>
+                    <li id="sel-marin">Sel marin : au goût</li>
+                    <li id="poivre-moulin">Poivre du moulin : au goût</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recette">
+        <div class="recipe-content">
+            <h3>Instructions</h3>
+            
+            <div class="etapes">
+                <div class="etape">
+                    <div class="etape-numero">1</div>
+                    <div class="etape-description">
+                        <p>Laver et couper les tomates en petits dés réguliers. Les mettre dans une passoire avec une pincée de sel et laisser dégorger 10 minutes pour éliminer l'excès d'eau.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">2</div>
+                    <div class="etape-description">
+                        <p>Couper la mozzarella di bufala en dés de la même taille que les tomates. Laver et ciseler grossièrement les feuilles de basilic frais.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">3</div>
+                    <div class="etape-description">
+                        <p>Dans un bol, mélanger délicatement les dés de tomates égouttées, la mozzarella, le basilic ciselé avec 2 cuillères à soupe d'huile d'olive et le vinaigre balsamique. Assaisonner avec sel et poivre.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">4</div>
+                    <div class="etape-description">
+                        <p>Griller les tranches de pain au grille-pain ou sous le gril du four jusqu'à ce qu'elles soient bien dorées et croustillantes des deux côtés.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">5</div>
+                    <div class="etape-description">
+                        <p>Éplucher les gousses d'ail et les couper en deux. Frotter énergiquement chaque tranche de pain grillé avec l'ail coupé pour parfumer le pain.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">6</div>
+                    <div class="etape-description">
+                        <p>Arroser chaque tranche d'un filet d'huile d'olive, puis garnir généreusement du mélange tomates-mozzarella-basilic. Servir immédiatement pour préserver le croustillant du pain.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conseils">
+                <h4>Conseils della Nonna</h4>
+                <ul>
+                    <li>Utilisez uniquement des tomates bien mûres et parfumées - c'est le secret d'une vraie bruschetta !</li>
+                    <li>La mozzarella di bufala est indispensable pour l'authenticité, mais la mozzarella classique peut dépanner</li>
+                    <li>Ne garnissez les tranches qu'au dernier moment pour éviter que le pain ramollisse</li>
+                    <li>L'huile d'olive doit être de première qualité - c'est elle qui fait toute la différence</li>
+                    <li>Le pain de campagne légèrement rassis est parfait pour cette recette</li>
+                    <li>Variante estivale : ajoutez quelques olives noires ou des tomates cerises multicolores</li>
+                    <li>Pour plus de gourmandise, ajoutez quelques pignons de pin grillés</li>
+                    <li>Accompagnez d'un verre de Chianti ou de rosé italien pour l'authenticité</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h3>Vous aimerez aussi</h3>
+        <div class="suggestions-container">
+            <div class="suggestion-card">
+                <img src="salade.jpg" alt="Salade Betteraves-Pommes au Curry">
+                <h4>Salade Betteraves-Pommes au Curry</h4>
+                <a href="salade-bettrave-pomme-curry.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="avocat.jpeg" alt="Tartare Avocat-Crevettes en Verrines">
+                <h4>Tartare Avocat-Crevettes en Verrines</h4>
+                <a href="verrines-avocat-crevettes.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="saumon frais.jpg" alt="Tartines Saumon Fumé">
+                <h4>Tartines Saumon Fumé au Fromage Frais</h4>
+                <a href="tartines-saumon.html" class="view-recipe">Voir la recette</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Abonnez-vous</h1>
+        <p>Pour ne pas manquer de nouvelles recettes fantastiques !</p>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre adresse mail ici">
+        </div>
+
+        <button class="send" type="submit">S'inscrire à la newsletter</button>
+    </section>
+
+    <footer>&copy; 2024 Spice & Spoon. Tous droits réservés.</footer>
+
+    <script>
+        // Script pour le menu responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+            
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('show');
+                });
+            }
+            
+            // Persistance du thème
+            const moonIcon = document.getElementById('bi-moon');
+            const body = document.body;
+            
+            // Vérifier si un thème est déjà enregistré
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Appliquer le thème sauvegardé s'il existe
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                if (moonIcon) {
+                    moonIcon.classList.remove('bi-moon');
+                    moonIcon.classList.add('bi-sun');
+                }
+            }
+            
+            // Gestion du clic sur l'icône de thème
+            if (moonIcon) {
+                moonIcon.addEventListener('click', function() {
+                    // Basculer entre les modes
+                    body.classList.toggle('dark-mode');
+                    
+                    // Mettre à jour l'icône
+                    if (body.classList.contains('dark-mode')) {
+                        moonIcon.classList.remove('bi-moon');
+                        moonIcon.classList.add('bi-sun');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        moonIcon.classList.remove('bi-sun');
+                        moonIcon.classList.add('bi-moon');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+
+        // Modifier les quantités d'ingrédients - BRUSCHETTA TOMATES-BASILIC
+        const portionsPossibles = [4, 8, 12, 16];
+        let index = 0; // Commence à 4 personnes
+
+        // Quantités de BASE (pour 4 personnes)
+        const quantitesBase = {
+            'baguette': 8,
+            'gousses-ail': 2,
+            'huile-olive-extra': 4,
+            'tomates-mures': 4,
+            'mozzarella-bufala': 150,
+            'basilic-frais': 1,
+            'vinaigre-balsamique': 2
+        };
+
+        function changerPortions() {
+            index = (index + 1) % portionsPossibles.length;
+            const personnes = portionsPossibles[index];
+            document.getElementById("personnes").textContent = personnes;
+            
+            // Met à jour les quantités proportionnellement
+            Object.keys(quantitesBase).forEach(ingredient => {
+                const quantiteBase = quantitesBase[ingredient];
+                const nouvelleQuantite = (quantiteBase * personnes) / 4; // Règle de 3
+                const element = document.getElementById(ingredient);
+                
+                if (element) {
+                    const quantityElement = element.querySelector('.quantity');
+                    if (quantityElement) {
+                        // Formatage selon le type d'ingrédient
+                        if (ingredient === 'mozzarella-bufala') {
+                            // Mozzarella en grammes
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else {
+                            // Autres ingrédients en unités entières
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

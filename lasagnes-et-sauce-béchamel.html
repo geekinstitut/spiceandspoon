@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Lasagnes et sauce béchamel (viande ou légumes) - Recette - Plats - Saveurs d'Ailleurs - Spice & Spoon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lasagnes.css">
+    <meta name="keywords" content="lasagnes, recette italienne, sauce béchamel, viande hachée, légumes, plat traditionnel, fromage">
+    <meta name="description" content="Découvrez notre délicieuse recette de lasagnes traditionnelles. Avec sa sauce béchamel onctueuse et ses couches de pâte fondante, un classique incontournable !">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="__67c4b3e483369.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="__67c4b3e483369.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar1">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+    </nav>
+    
+    <nav id="navbar">
+        <div class="text">
+            <a href="index.html" class="hbfwdhjn"><h1 class="title">Spice & Spoon</h1></a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apéritifs.html">Apéritifs</a></li>
+            <li><a href="entrées.html">Entrées</a></li>
+            <li><a href="plats.html">Plats</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="saveursdailleurs.html">Saveurs d'Ailleurs</a></li>
+            <li><a href="articlesspéciaux.html">Articles Spéciaux</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <a href="#"><i class="bi bi-moon" id="bi-moon"></i></a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="recipe-header">
+            <div class="recipe-intro">
+                <h2>Lasagnes à la sauce béchamel</h2>
+                <div class="recipe-tags">
+                    <a href="plats.html" class="recipe-tag">Plats</a>
+                    <a href="saveursdailleurs.html" class="recipe-tag">Saveurs d'Ailleurs</a>
+                </div>
+                <p class="recipe-description">
+                    Le grand classique de la cuisine italienne ! Des lasagnes généreuses avec leur sauce béchamel onctueuse, parfaites pour régaler toute la famille. Version viande ou légumes selon vos goûts.
+                </p>
+                
+                <div class="recipe-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Préparation : 45 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-fire"></i>
+                        <span>Cuisson : 30 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-star"></i>
+                        <span>Difficulté : Moyenne</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-image">
+                    <img src="lasagnes.jpg" alt="Lasagnes à la sauce béchamel" class="main-image">
+                </div>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h3>Ingrédients</h3>
+                <div class="portion-control">
+                    <h4>Recette pour <span id="personnes">6</span> personnes</h4>
+                    <button class="personne-btn" onclick="changerPortions()">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+                
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Pour la sauce tomate :</h4>
+                <ul class="ingredients-list">
+                    <li id="viande-hachee">Viande hachée : <span class="quantity">600</span>g</li>
+                    <li id="oignon">Oignon : <span class="quantity">1</span></li>
+                    <li id="ail">Gousse d'ail : <span class="quantity">1</span></li>
+                    <li id="tomates-pelees">Tomates pelées : <span class="quantity">300</span>g</li>
+                    <li id="cube-bouillon">Cube de bouillon : <span class="quantity">1</span></li>
+                    <li id="huile-olive">Huile d'olive : <span class="quantity">2</span> c. à soupe</li>
+                    <li id="origan">Origan : <span class="quantity">1</span> c. à café</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Pour la béchamel :</h4>
+                <ul class="ingredients-list">
+                    <li id="beurre">Beurre : <span class="quantity">70</span>g</li>
+                    <li id="farine">Farine : <span class="quantity">75</span>g</li>
+                    <li id="lait">Lait : <span class="quantity">90</span>cl</li>
+                </ul>
+
+                <h4 style="color: var(--text-color-hover); margin-top: 20px; margin-bottom: 10px;">Autres :</h4>
+                <ul class="ingredients-list">
+                    <li id="pates-lasagne">Pâtes à lasagne : <span class="quantity">12</span> plaques</li>
+                    <li id="gruyere">Gruyère râpé : <span class="quantity">200</span>g</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recette">
+        <div class="recipe-content">
+            <h3>Instructions</h3>
+            
+            <div class="etapes">
+                <div class="etape">
+                    <div class="etape-numero">1</div>
+                    <div class="etape-description">
+                        <p>Hacher finement l'oignon et écraser la gousse d'ail.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">2</div>
+                    <div class="etape-description">
+                        <p>Faire chauffer l'huile d'olive dans une poêle et y faire rissoler l'ail et l'oignon jusqu'à ce qu'ils soient dorés.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">3</div>
+                    <div class="etape-description">
+                        <p>Ajouter la viande hachée et laisser revenir en émiettant bien avec une cuillère en bois jusqu'à ce qu'elle soit bien dorée.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">4</div>
+                    <div class="etape-description">
+                        <p>Ajouter les tomates pelées écrasées et le cube de bouillon émietté. Mélanger bien.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">5</div>
+                    <div class="etape-description">
+                        <p>Saler, poivrer et saupoudrer d'origan. Laisser cuire à feu doux pendant 20 minutes en remuant régulièrement.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">6</div>
+                    <div class="etape-description">
+                        <p>Pour la béchamel : faire fondre le beurre dans une casserole à feu moyen.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">7</div>
+                    <div class="etape-description">
+                        <p>Ajouter la farine et mélanger énergiquement avec un fouet pendant 2 minutes pour former un roux.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">8</div>
+                    <div class="etape-description">
+                        <p>Verser le lait progressivement en fouettant constamment pour éviter les grumeaux. Cuire jusqu'à épaississement. Saler et poivrer.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">9</div>
+                    <div class="etape-description">
+                        <p>Cuire les plaques de lasagne selon les instructions du paquet. Les égoutter et les disposer sur un torchon.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">10</div>
+                    <div class="etape-description">
+                        <p>Préchauffer le four à 180°C. Dans un plat à gratin beurré, alterner les couches : sauce tomate, pâtes, béchamel, gruyère.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">11</div>
+                    <div class="etape-description">
+                        <p>Terminer par une couche de béchamel et parsemer généreusement de gruyère râpé.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">12</div>
+                    <div class="etape-description">
+                        <p>Enfourner pendant 30 minutes jusqu'à ce que le dessus soit bien doré. Laisser reposer 5 minutes avant de servir.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conseils">
+                <h4>Conseils</h4>
+                <ul>
+                    <li>Pour une version végétarienne, remplacez la viande par des légumes : courgettes, aubergines, épinards ou champignons</li>
+                    <li>Vous pouvez préparer les lasagnes la veille et les cuire le lendemain</li>
+                    <li>Pour une béchamel plus onctueuse, ajoutez une pincée de muscade</li>
+                    <li>Laissez reposer les lasagnes 10 minutes après cuisson pour faciliter la découpe</li>
+                    <li>Vous pouvez congeler les lasagnes crues et les cuire directement du congélateur (ajouter 15 min de cuisson)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h3>Vous aimerez aussi</h3>
+        <div class="suggestions-container">
+            <div class="suggestion-card">
+                <img src="bowl.png" alt="Bowl Coloré aux Légumes">
+                <h4>Bowl Coloré aux Légumes</h4>
+                <a href="bowl-légumes.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="shwarma.jpg" alt="Shawarma Syrien">
+                <h4>Shawarma Syrien</h4>
+                <a href="shawarma-syrienne-poulet.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="image apéritifs.jpg" alt="Raclette">
+                <h4>Raclette traditionnelle</h4>
+                <a href="raclette-traditionnelle.html" class="view-recipe">Voir la recette</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Abonnez-vous</h1>
+        <p>Pour ne pas manquer de nouvelles recettes fantastiques !</p>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre adresse mail ici">
+        </div>
+
+        <button class="send" type="submit">S'inscrire à la newsletter</button>
+    </section>
+
+    <footer>&copy; 2024 Spice & Spoon. Tous droits réservés.</footer>
+
+    <script>
+        // Script pour le menu responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+            
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('show');
+                });
+            }
+            
+            // Persistance du thème
+            const moonIcon = document.getElementById('bi-moon');
+            const body = document.body;
+            
+            // Vérifier si un thème est déjà enregistré
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Appliquer le thème sauvegardé s'il existe
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                if (moonIcon) {
+                    moonIcon.classList.remove('bi-moon');
+                    moonIcon.classList.add('bi-sun');
+                }
+            }
+            
+            // Gestion du clic sur l'icône de thème
+            if (moonIcon) {
+                moonIcon.addEventListener('click', function() {
+                    // Basculer entre les modes
+                    body.classList.toggle('dark-mode');
+                    
+                    // Mettre à jour l'icône
+                    if (body.classList.contains('dark-mode')) {
+                        moonIcon.classList.remove('bi-moon');
+                        moonIcon.classList.add('bi-sun');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        moonIcon.classList.remove('bi-sun');
+                        moonIcon.classList.add('bi-moon');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+
+        // Modifier les quantités d'ingrédients - LASAGNES
+        const portionsPossibles = [6, 12, 18, 24];
+        let index = 0; // Commence à 6 personnes
+
+        // Quantités de BASE (pour 6 personnes)
+        const quantitesBase = {
+            'viande-hachee': 600,
+            'oignon': 1,
+            'ail': 1,
+            'tomates-pelees': 300,
+            'cube-bouillon': 1,
+            'huile-olive': 2,
+            'origan': 1,
+            'beurre': 70,
+            'farine': 75,
+            'lait': 90,
+            'pates-lasagne': 12,
+            'gruyere': 200
+        };
+
+        function changerPortions() {
+            index = (index + 1) % portionsPossibles.length;
+            const personnes = portionsPossibles[index];
+            document.getElementById("personnes").textContent = personnes;
+            
+            // Met à jour les quantités proportionnellement
+            Object.keys(quantitesBase).forEach(ingredient => {
+                const quantiteBase = quantitesBase[ingredient];
+                const nouvelleQuantite = (quantiteBase * personnes) / 6; // Règle de 3
+                const element = document.getElementById(ingredient);
+                
+                if (element) {
+                    const quantityElement = element.querySelector('.quantity');
+                    if (quantityElement) {
+                        // Formatage selon le type d'ingrédient
+                        if (ingredient === 'oignon' || ingredient === 'ail' || ingredient === 'cube-bouillon' || ingredient === 'origan' || ingredient === 'pates-lasagne') {
+                            // Ingrédients en unités : entiers
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else if (ingredient === 'lait') {
+                            // Lait en cl
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else if (ingredient === 'huile-olive') {
+                            // Huile en cuillères à soupe
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else {
+                            // Autres ingrédients en grammes
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Tiramisu - Recette - Desserts - Spice & Spoon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="tiramisu.css">
+    <meta name="keywords" content="tiramisu, recette italienne, mascarpone, café, dessert italien, biscuits à la cuillère, cacao">
+    <meta name="description" content="Découvrez notre authentique recette de tiramisu italien. Un dessert onctueux et savoureux avec mascarpone, café et cacao, sans cuisson !">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="__67c4b3e483369.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="__67c4b3e483369.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="__67c4b3e483369.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar1">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-pinterest"></i></a>
+    </nav>
+    
+    <nav id="navbar">
+        <div class="text">
+            <a href="index.html" class="hbfwdhjn"><h1 class="title">Spice & Spoon</h1></a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apéritifs.html">Apéritifs</a></li>
+            <li><a href="entrées.html">Entrées</a></li>
+            <li><a href="plats.html">Plats</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="saveursdailleurs.html">Saveurs d'Ailleurs</a></li>
+            <li><a href="articlesspéciaux.html">Articles Spéciaux</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <a href="#"><i class="bi bi-moon" id="bi-moon"></i></a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="recipe-header">
+            <div class="recipe-intro">
+                <h2>Tiramisu</h2>
+                <div class="recipe-tags">
+                    <a href="desserts.html" class="recipe-tag">Desserts</a>
+                    <a href="saveursdailleurs.html" class="recipe-tag">Saveurs d'Ailleurs</a>
+                </div>
+                <p class="recipe-description">
+                    L'authentique dessert italien ! Ce tiramisu onctueux et parfumé au café saura ravir tous les gourmands avec sa texture crémeuse et ses saveurs intenses.
+                </p>
+                
+                <div class="recipe-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Préparation : 20 min</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-snow2"></i>
+                        <span>Repos : 4h minimum</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-star"></i>
+                        <span>Difficulté : Facile</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-image">
+                    <img src="tiramisu.png" alt="Tiramisu italien traditionnel" class="main-image">
+                </div>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h3>Ingrédients</h3>
+                <div class="portion-control">
+                    <h4>Recette pour <span id="personnes">6</span> personnes</h4>
+                    <button class="personne-btn" onclick="changerPortions()">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+                
+                <ul class="ingredients-list">
+                    <li id="sucre-roux">Sucre roux : <span class="quantity">100</span>g</li>
+                    <li id="biscuits">Biscuits à la cuillère : <span class="quantity">24</span></li>
+                    <li id="cacao">Cacao amer : <span class="quantity">30</span>g</li>
+                    <li id="oeufs">Œufs : <span class="quantity">3</span></li>
+                    <li id="sucre-vanille">Sucre vanillé : <span class="quantity">1</span> sachet</li>
+                    <li id="mascarpone">Mascarpone : <span class="quantity">250</span>g</li>
+                    <li id="cafe">Café noir non sucré : <span class="quantity">50</span>cl</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recette">
+        <div class="recipe-content">
+            <h3>Instructions</h3>
+            
+            <div class="etapes">
+                <div class="etape">
+                    <div class="etape-numero">1</div>
+                    <div class="etape-description">
+                        <p>Séparer les blancs des jaunes d'œufs.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">2</div>
+                    <div class="etape-description">
+                        <p>Mélanger les jaunes avec le sucre roux et le sucre vanillé.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">3</div>
+                    <div class="etape-description">
+                        <p>Ajouter le mascarpone au fouet.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">4</div>
+                    <div class="etape-description">
+                        <p>Monter les blancs en neige et les incorporer délicatement à la spatule au mélange précédent. Réserver.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">5</div>
+                    <div class="etape-description">
+                        <p>Mouiller les biscuits dans le café rapidement avant d'en tapisser le fond du plat.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">6</div>
+                    <div class="etape-description">
+                        <p>Recouvrir d'une couche de crème au mascarpone puis répéter l'opération en alternant couche de biscuits et couche de crème en terminant par cette dernière.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">7</div>
+                    <div class="etape-description">
+                        <p>Saupoudrer de cacao.</p>
+                    </div>
+                </div>
+                
+                <div class="etape">
+                    <div class="etape-numero">8</div>
+                    <div class="etape-description">
+                        <p>Mettre au réfrigérateur 4 heures minimum puis déguster frais.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conseils">
+                <h4>Conseils</h4>
+                <ul>
+                    <li>Utilisez un café fort et bien refroidi pour imbiber les biscuits</li>
+                    <li>Ne trempez pas trop longtemps les biscuits dans le café pour éviter qu'ils ne se délitent</li>
+                    <li>Pour un tiramisu encore plus savoureux, ajoutez une cuillère d'amaretto au café</li>
+                    <li>Idéalement, préparez votre tiramisu la veille pour qu'il soit parfaitement pris</li>
+                    <li>Servez bien frais et saupoudrez de cacao juste avant de servir</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h3>Vous aimerez aussi</h3>
+        <div class="suggestions-container">
+            <div class="suggestion-card">
+                <img src="fraisier.jpg" alt="Fraisier">
+                <h4>Fraisier</h4>
+                <a href="fraisier.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="chocolat dubai.png" alt="Chocolat Dubai">
+                <h4>Chocolat Dubai</h4>
+                <a href="chocolat-dubai.html" class="view-recipe">Voir la recette</a>
+            </div>
+            
+            <div class="suggestion-card">
+                <img src="tarteauxpommes.png" alt="Tarte aux pommes">
+                <h4>Tarte aux pommes</h4>
+                <a href="tarte-aux-pommes.html" class="view-recipe">Voir la recette</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Abonnez-vous</h1>
+        <p>Pour ne pas manquer de nouvelles recettes fantastiques !</p>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre adresse mail ici">
+        </div>
+
+        <button class="send" type="submit">S'inscrire à la newsletter</button>
+    </section>
+
+    <footer>&copy; 2024 Spice & Spoon. Tous droits réservés.</footer>
+
+    <script>
+        // Script pour le menu responsive
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+            
+            if (menuToggle && menu) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('show');
+                });
+            }
+            
+            // Persistance du thème
+            const moonIcon = document.getElementById('bi-moon');
+            const body = document.body;
+            
+            // Vérifier si un thème est déjà enregistré
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Appliquer le thème sauvegardé s'il existe
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                if (moonIcon) {
+                    moonIcon.classList.remove('bi-moon');
+                    moonIcon.classList.add('bi-sun');
+                }
+            }
+            
+            // Gestion du clic sur l'icône de thème
+            if (moonIcon) {
+                moonIcon.addEventListener('click', function() {
+                    // Basculer entre les modes
+                    body.classList.toggle('dark-mode');
+                    
+                    // Mettre à jour l'icône
+                    if (body.classList.contains('dark-mode')) {
+                        moonIcon.classList.remove('bi-moon');
+                        moonIcon.classList.add('bi-sun');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        moonIcon.classList.remove('bi-sun');
+                        moonIcon.classList.add('bi-moon');
+                        // Sauvegarder la préférence
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+
+        // Modifier les quantités d'ingrédients - TIRAMISU
+        const portionsPossibles = [6, 12, 18, 24, 30];
+        let index = 0; // Commence à 6 personnes
+
+        // Quantités de BASE (pour 6 personnes) avec les VRAIS IDs
+        const quantitesBase = {
+            'sucre-roux': 100,
+            'biscuits': 24,
+            'cacao': 30,
+            'oeufs': 3,
+            'sucre-vanille': 1,
+            'mascarpone': 250,
+            'cafe': 50
+        };
+
+        function changerPortions() {
+            index = (index + 1) % portionsPossibles.length;
+            const personnes = portionsPossibles[index];
+            document.getElementById("personnes").textContent = personnes;
+            
+            // Met à jour les quantités proportionnellement
+            Object.keys(quantitesBase).forEach(ingredient => {
+                const quantiteBase = quantitesBase[ingredient];
+                const nouvelleQuantite = (quantiteBase * personnes) / 6; // Règle de 3
+                const element = document.getElementById(ingredient);
+                
+                if (element) {
+                    const quantityElement = element.querySelector('.quantity');
+                    if (quantityElement) {
+                        // Formatage selon le type d'ingrédient
+                        if (ingredient === 'oeufs' || ingredient === 'biscuits' || ingredient === 'sucre-vanille') {
+                            // Œufs, biscuits, sachets : entiers
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        } else {
+                            // Sucre, cacao, mascarpone, café : arrondis
+                            quantityElement.textContent = Math.round(nouvelleQuantite);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
